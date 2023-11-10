@@ -59,6 +59,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -82,11 +85,72 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="DdlFreeSearchModel.vb" />
+    <Compile Include="FormDishInfo.Designer.vb">
+      <DependentUpon>FormDishInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDishInfo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormDishTypeInfo.Designer.vb">
+      <DependentUpon>FormDishTypeInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDishTypeInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHallInfo.Designer.vb">
+      <DependentUpon>FormHallInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHallInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManagerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManagerInfo.Designer.vb">
+      <DependentUpon>FormManagerInfo.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemberInfo.Designer.vb">
+      <DependentUpon>FormMemberInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemberInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemberTypeInfo.Designer.vb">
+      <DependentUpon>FormMemberTypeInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemberTypeInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDish.Designer.vb">
+      <DependentUpon>FormOrderDish.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDish.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderPay.Designer.vb">
+      <DependentUpon>FormOrderPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTableInfo.Designer.vb">
+      <DependentUpon>FormTableInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTableInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -108,6 +172,39 @@
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormDishInfo.resx">
+      <DependentUpon>FormDishInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDishTypeInfo.resx">
+      <DependentUpon>FormDishTypeInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHallInfo.resx">
+      <DependentUpon>FormHallInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManagerInfo.resx">
+      <DependentUpon>FormManagerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemberInfo.resx">
+      <DependentUpon>FormMemberInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemberTypeInfo.resx">
+      <DependentUpon>FormMemberTypeInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDish.resx">
+      <DependentUpon>FormOrderDish.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderPay.resx">
+      <DependentUpon>FormOrderPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTableInfo.resx">
+      <DependentUpon>FormTableInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -116,6 +213,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ItcastCater.db" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -126,6 +224,19 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\desk1.png" />
+    <Content Include="images\desk2.png" />
+    <Content Include="images\loginBg.png" />
+    <Content Include="images\logo.ico" />
+    <Content Include="images\menuBg.BMP" />
+    <Content Include="images\menuDish.png" />
+    <Content Include="images\menuManager.png" />
+    <Content Include="images\menuMember.png" />
+    <Content Include="images\menuOrder.png" />
+    <Content Include="images\menuQuit.png" />
+    <Content Include="images\menuTable.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

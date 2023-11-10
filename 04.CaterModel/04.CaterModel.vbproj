@@ -64,6 +64,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DishInfo.vb" />
+    <Compile Include="DishTypeInfo.vb" />
+    <Compile Include="HallInfo.vb" />
+    <Compile Include="LoginState.vb" />
+    <Compile Include="ManagerInfo.vb" />
+    <Compile Include="MemberInfo.vb" />
+    <Compile Include="MemberTypeInfo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -79,6 +86,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OrderDetailInfo.vb" />
+    <Compile Include="OrderInfo.vb" />
+    <Compile Include="OtherClass.vb" />
+    <Compile Include="TableInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

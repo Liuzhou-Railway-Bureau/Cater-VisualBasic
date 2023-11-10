@@ -73,6 +73,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderInfoBll.vb" />
+    <Compile Include="TableInfoBll.vb" />
+    <Compile Include="DishInfoBll.vb" />
+    <Compile Include="HallInfoBll.vb" />
+    <Compile Include="MemberInfoBll.vb" />
+    <Compile Include="DishTypeInfoBll.vb" />
+    <Compile Include="MemberTypeInfoBll.vb" />
+    <Compile Include="ManagerInfoBll.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
